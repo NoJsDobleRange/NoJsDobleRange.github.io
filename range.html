@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NoJsDobleRange</title>
+    <link rel="stylesheet" href="range.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+</head>
+<body>
+    <form  class=form method="get" oninput="from_out.value=from_in.value, to_out.value=to_in.value">
+        <div class="form__output_inner">
+        <output class="form__output form__output_1" name="from_out"><span>От</span> 0</output>
+        <output class="form__output form__output_2" name="to_out"><span>До</span> 3000</output>
+    </div>
+        <div class="form__range_inner">
+            <input class="form__range form__range_1" value=0 type="range" name="from_in" id="from_in" step="100" min=0 max=5000> 
+            <input class="form__range form__range_2" value=3000 step="100" min=1500 max=5000 type="range" name="to_in" id="to_in">
+        </div>
+        <input type="submit"  value="Показать" class="form__submit" >
+        </form>
+</body>
+</html>

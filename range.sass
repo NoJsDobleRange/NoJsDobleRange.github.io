@@ -1,0 +1,141 @@
+
+*:focus
+    outline: 
+    
+%track
+    z-index: 1
+    cursor: pointer
+    animate: 0.2s
+    background: #fff
+    height: 2px
+    z-index: 0
+    &:focus
+        outline: none
+%thumb
+    background-image: url(filter-button.svg)
+    background-position: center
+    background-repeat: no-repeat
+    height: 30px
+    width: 30px
+    cursor: pointer
+    margin-top: 0px
+    z-index: 1
+    transition: 0.2s
+    &:hover, &:focus, &:active
+        transform: scale(1.1)
+    
+.form
+    margin: 0 auto
+    width: 350px
+    background-color: #eeeeee
+    margin-top: 40vh
+    padding: 50px
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    flex-direction: column
+    background-image: url(filter_background.png)
+    background-position: center 
+    overflow: hidden
+    color: #333333
+    font-family: "PT Sans"
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+    text-transform: uppercase
+    &__output
+        border: 2px solid #ffffff;
+        width: 50%
+        padding: 10px
+        color: #000
+        text-align: center
+        color: white
+        &_1
+            border-top-left-radius: 5px
+            border-bottom-left-radius: 5px
+            border-right: none
+            border
+        &_2 
+            border-left: none
+            border-top-right-radius: 5px
+            border-bottom-right-radius: 5px
+        &_inner 
+            display: flex
+            justify-content: space-between
+            margin-bottom: 22px
+    &__submit
+        font: inherit
+        border: 2px solid #ffffff
+        background-color: transparent
+        align-self: center
+        padding: 10px 33px
+        color: white
+        border-radius: 2px
+        text-transform: uppercase
+        transition: 0.5s
+        &:hover, &:focus, &:active
+            background-color: #fff
+            color: #000
+
+    /* Special styling for WebKit/Blink */
+    &__range
+        -webkit-appearance: none
+        margin: 0
+        width: 100%
+        height: 2px
+        position: absolute
+        &_inner
+            display: flex
+            justify-content: space-between
+            position: relative
+            flex-direction: row-reverse
+            margin-bottom: 34px
+
+            
+        &_2
+            width: 70%
+
+        &::-webkit-slider-runnable-track 
+            @extend %track
+        &::-webkit-slider-thumb
+            @extend %thumb
+            -webkit-appearance: none
+        &::-moz-range-track
+            @extend %track
+        &::-moz-range-thumb
+            z-index: 10
+            background-image: url(filter-button.svg)
+            background-position: center
+            height: 30px
+            width: 30px
+            background: #ffffff
+            cursor: pointer
+        &::-ms-track 
+            width: 100%
+            cursor: pointer
+            animate: 0.2s
+            background: transparent
+            border-color: transparent
+            border-width: 30px 0
+            color: transparent
+        &::-ms-fill-lower 
+            background: #fff
+            height: 2px;
+            z-index: 1
+        &::-ms-fill-upper 
+            background: #fff
+            height: 2px;
+            z-index: 1
+        &::-ms-thumb 
+            background-image: url(filter-button.svg)
+            background-position: center
+            height: 30px
+            width: 30px
+            cursor: pointer
+        &:focus::-ms-fill-lower 
+            background: #fff
+            height: 2px
+        &:focus::-ms-fill-upper 
+            background: #fff
+            height: 2px
+

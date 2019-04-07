@@ -1,0 +1,193 @@
+.form__range::-webkit-slider-runnable-track, .form__range::-moz-range-track {
+  z-index: 1;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #fff;
+  height: 2px;
+  z-index: 0;
+}
+
+.form__range:focus::-webkit-slider-runnable-track, .form__range:focus::-moz-range-track {
+  outline: none;
+}
+
+.form__range::-webkit-slider-thumb {
+  background-image: url(filter-button.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 0px;
+  z-index: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.form__range:hover::-webkit-slider-thumb, .form__range:focus::-webkit-slider-thumb, .form__range:active::-webkit-slider-thumb {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form {
+  margin: 0 auto;
+  width: 350px;
+  background-color: #eeeeee;
+  margin-top: 40vh;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(filter_background.png);
+  background-position: center;
+  overflow: hidden;
+  color: #333333;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  /* Special styling for WebKit/Blink */
+}
+
+.form__output {
+  border: 2px solid #ffffff;
+  width: 50%;
+  padding: 10px;
+  color: #000;
+  text-align: center;
+  color: white;
+}
+
+.form__output_1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+.form__output_2 {
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form__output_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.form__submit {
+  font: inherit;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px 33px;
+  color: white;
+  border-radius: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__submit:hover, .form__submit:focus, .form__submit:active {
+  background-color: #fff;
+  color: #000;
+}
+
+.form__range {
+  -webkit-appearance: none;
+  margin: 0;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+}
+
+.form__range_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 34px;
+}
+
+.form__range_2 {
+  width: 70%;
+}
+
+.form__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.form__range::-moz-range-thumb {
+  z-index: 10;
+  background-image: url(filter-button.svg);
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.form__range::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 30px 0;
+  color: transparent;
+}
+
+.form__range::-ms-fill-lower {
+  background: #fff;
+  height: 2px;
+  z-index: 1;
+}
+
+.form__range::-ms-fill-upper {
+  background: #fff;
+  height: 2px;
+  z-index: 1;
+}
+
+.form__range::-ms-thumb {
+  background-image: url(filter-button.svg);
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.form__range:focus::-ms-fill-lower {
+  background: #fff;
+  height: 2px;
+}
+
+.form__range:focus::-ms-fill-upper {
+  background: #fff;
+  height: 2px;
+}
+/*# sourceMappingURL=range.css.map */
